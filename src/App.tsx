@@ -3,10 +3,7 @@ import {ToDoList} from './ToDoList';
 import {AddToDoForm} from './addToDoForm'
 import * as types from './types';
 
-const initialTodos: Array <types.Todo> = [
-  {id:1, text:'hello', complete: false},
-  {id:2, text:'hellooo', complete: true}
-]
+const initialTodos: Array <types.Todo> = []
 
 const App: React.FC = () => {
   const [todos, setTodos] = useState(initialTodos)
